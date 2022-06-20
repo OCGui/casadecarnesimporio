@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'edoregular';
+    src: url('edo-webfont.eot');
+    src: url('edo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('edo-webfont.woff2') format('woff2'),
+         url('edo-webfont.woff') format('woff'),
+         url('edo-webfont.ttf') format('truetype'),
+         url('edo-webfont.svg#edoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+a#item1.nav-link.active.show{
+    background-color: red;
+}
+
+a#item1.nav-link.active{
+    background-color: red;
+}
+
+a#item2.nav-link.active.show{
+    background-color: red;
+}
+
+a#item2.nav-link.active{
+    background-color: red;
+}
+a#item3.nav-link.active.show{
+    background-color: red;
+}
+
+a#item3.nav-link.active{
+    background-color: red;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* Barra de Rolagem */
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+/* Fundo que corre */
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: #F4F4F4;
+}
+
+/* Linha que desce */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 20px;
+}
+/* Linha que desce*/
+
+
+/* Barra de Rolagem */
+
+

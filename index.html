@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Império - Casa de Carnes</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="shortcut icon" href="img/logoo.png" >
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/9276b9eb3c.js" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    #backtopo {
+      display: scroll;
+      position: fixed;
+      top: 30px;
+      right: 10px;
+    }
+
+    .navbar nav a{
+      color: white;
+    }
+    .navbar-brand a{
+      float: left;
+    }
+    .carousel-inner > .carousel-item > img {
+      width: 900px;
+      height: 500px; 
+    }
+    .scrollspy{
+      position: relative;
+      overflow: auto;
+      height: 350px;
+
+    }
+
+    .scrollspy,  .navbar {
+      color: white;
+    }
+    a.nav-link.my-2.active{
+      background-color: red;
+    }
+
+    @font-face{ 
+      font-family: 'Edo';
+      src: url('css/edo-WebFont.woff');
+      src: url('css/WebFont.eot?iefix') format('eot'),
+      url('css/edo-WebFont.woff') format('woff'),
+
+    }
+  </style>
+</head>
+
+
+<body style="background-color: #000000;">
+
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-#000000">
+      <img class="mr-4" src="img/lo.png" width="80px" height="80px">
+      <a class="navbar-brand h1 mb-0 mr-5 pr-5" href="" style="font-family: Times New Roman; font-size: 40px; width: 40px;">IMPERIO</a>
+      <button class="navbar-toggler pl-4 ml-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-5 pl-5">
+          <li class="nav-item active">
+
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+
+
+          <li class="nav-item ml-auto">
+            <a class="nav-link" href="#">Fale conosco!</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Redes Sociais
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Instagram</a>
+              <a class="dropdown-item" href="#">Facebook</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">WhatsApp</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- SEARCH-->
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="position: scroll;">
+        <img class="d-block w-100 h-70" src="img/acougue.png" alt="First slide">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h1>Casa de Carnes Império</h1>
+          <p>Melhor casa de carnes nobres da região</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-70" src="img/bif.png" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h1>Casa de Carnes Império</h1>
+          <p>Melhor casa de carnes nobres da região</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 h-70" src="img/ex.jpg" alt="Third slide">
+        <div class="carousel-caption d-none d-md-block text-light">
+          <h1>Casa de Carnes Império</h1>
+          <p>Melhor casa de carnes nobres da região</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="container" >
+  <div class="col-12 text-center  mt-3">
+    <h1 class="display-3  mt-5 text-light">Bem vindo!</h1>
+    <p class="text-light mb-5">
+      Seja bem vindo a Casa de Carnes Império, você aprenderá conteúdos que envolvem o mundo das carnes nobres, tipos de corte, pontos da carne, entre outros.
+    </p>
+    <div class="row justify-content-sm-center">
+      <div class="col-sm-6 col-md-4 mb-5">
+        <div class="card">
+          <img src="img/car.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Carnes Nobres</h4>
+            <p class="card-text">Tipos de carnes de primeira
+              A carnes de primeira são conhecidas por terem uma textura mais macia e estão localizadas nas regiões menos usadas no corpo dos bois, portanto proporcionam cortes de maior qualidade e com bem menos gordura. Geralmente são usadas para o preparo de churrascos e assados.
+            </p>
+            <a href="#" data-toggle="modal" data-target="#nobres" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-5">
+        <div class="card">
+          <img src="img/ex.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Carnes Exóticas</h4>
+            <p class="card-text">Em um mundo gourmetizado como o que vivemos, acaba se tornando cada vez mais fácil encontrar carnes diferentes, de diversos lugares. É  claro  que  uma  carne  considerada  exótica  no  Brasil  pode  ser comum  em  outros  países,  como  a  carne  de  cavalo  na  Europa ou mesmo a carne de canguru na Austrália.
+            </p>
+            <a href="#" data-toggle="modal" data-target="#exoticas" class="card-link">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 mb-5">
+        <div class="card">
+          <img src="img/pex.jpg" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Carnes mais saudáveis</h4>
+            <p class="card-text">O aspecto mais importante na hora de se escolher a carne deve ser a saúde. Independe do tipo de carne, é possível manter uma dieta equilibrada com os dois tipos. Tanto as carnes brancas quanto as vermelhas têm aspectos positivos e negativos. Para consumí-las de forma saudável é preciso equilibrio.
+            </p>
+            <a href="#" class="card-link mr-4" data-toggle="modal" data-target="#saudavel">Saiba mais</a>
+            <a href="#end">Veja nossos produtos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="line">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mb-2">
+        <nav id="navbarVertical" class="navbar navbar-dark bg-dark" style="border-radius: 10px;">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link my-2" href="#item1">• Cuidados com a carne!</a>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link my-2" href="#item2">• Ponto da carne</a>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link my-2" href="#item3">• Cortes de carne</a>
+          </nav>
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link my-2" href="#item4" align="left">• Como tratar a carne pro churras</a>
+          </nav>
+        </nav>
+      </div>
+      <div class="col-md-9 col-sm-6 mb-2">
+        <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspy">
+          <h4 id="item1">CUIDADO COM A CARNE!<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-octagon-fill ml-2" transform="scale(2.0)" viewBox="-4 0 20 17">
+            <path d="M11.46.146A.5.5 0 0 0 11.107 0H4.893a.5.5 0 0 0-.353.146L.146 4.54A.5.5 0 0 0 0 4.893v6.214a.5.5 0 0 0 .146.353l4.394 4.394a.5.5 0 0 0 .353.146h6.214a.5.5 0 0 0 .353-.146l4.394-4.394a.5.5 0 0 0 .146-.353V4.893a.5.5 0 0 0-.146-.353L11.46.146zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="#FF0000"/>
+          </svg> </h4>
+          <p class="text-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <br><br><br><br><br><br>
+          <h5 id="item2" class="text-light">Pontos da Carne<h4>🥩</h4></h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <br><br><br><br><br><br>
+          <h5 id="item3" class="text-light">Cortes da Carne <h4>🔪</h4></h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <h4 id="item4">Como tratar qualquer tipo de carne pro churrasco🔥</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+ <div class="container">
+   <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="display-4 pl-4"><i class="fa-solid fa-fire-burner mr-4" style="color:red"></i>Casa de Carnes Império</h1>
+      <p class="lead">2021 ©</p>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+   <div class="col-12">
+     <ul class="nav nav-pills justify-content-center" id="menubaixo" role="tablist">
+       <li class="nav-item mr-4">
+         <a class="nav-link active" id="item1" href="#item-1" data-toggle="pill">Contato</a>
+       </li>
+       <li class="nav-item mr-4">
+         <a class="nav-link" id="item2" href="#item-2" data-toggle="pill">Nossos produtos</a>
+       </li>
+       <li class="nav-item mr-4">
+         <a class="nav-link" id="item3" href="#item-3" data-toggle="pill">Endereço</a>
+       </li>
+     </ul>
+
+     <div class="tab-content" id="content">
+       <div class="tab-pane fade show active" id="item-1" role="tabpanel">
+         <div class="row">
+           <div class="col-sm-12 text-center mt-5">
+             API REDIRECIONANDO PARA O WHATSAPP
+           </div>
+         </div>
+       </div>
+
+       <div class="tab-pane fade show" id="item-2" role="tabpanel">
+         <div class="row">
+           <div class="col-sm-12 mx-auto text-center">
+             <img src="img/cat.jpg" width="900" height="400" class="mt-5 img-fluid">
+           </div>
+         </div>
+       </div>
+
+       <div class="tab-pane fade show" id="item-3" role="tabpanel">
+        <h3 class="mt-5">Jardim Santo Antonio, Mogi Guaçu - SP, 13847-178</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1655696173586!6m8!1m7!1sAszx3cXUrezJGAzbSVRQEQ!2m2!1d-22.34647488987039!2d-46.94450671600642!3f311.2392!4f0!5f0.7820865974627469" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="text-center mt-2 container"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<i id="end">
+</i>
+<div id="backtopo">
+  <a href="#" title="Back to Top"><img src="http://static.tumblr.com/44uea6e/DhOm9887f/backtop.png" /></a>
+</div>
+</div>
+
+<div class="container" style="color: white;">
+<div class="row">
+  <div class="col-12 text-center my-5">
+    <h1 class="display-4"><i class="fas fa-envelope-open mr-4"></i>Contate-nos</h1>
+  </div>
+</div>
+<div class="row justify-content-center mb-5">
+  <div class="col-sm-12 col-md-10 col-lg-8">
+    <form action="mailto:chameleonwdesign@gmail.com" method="post">
+      <div class="form-row">
+        <div class="form-group col-sm-12">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="e-mail">E-mail</label>
+          <input type="e-mail" class="form-control" id="e-mail" placeholder="E-mail">
+        </div>
+        <div class="form-group col-sm-12">
+          <label for="subject">Assunto</label>
+          <input type="subject" class="form-control" id="e-mail" placeholder="E-mail">
+        </div>
+         <div class="form-group col-sm-12">
+          <label for="mensagem">Mensagem</label>
+          <textarea name="message" class="form-control" id="mensagem" placeholder="Mensagem"></textarea> 
+        </div>
+        <button action="mailto:chameleonwdesign@gmail.com" type="submit" class="btn btn-danger">
+            Enviar
+          </button>
+      </div>
+      <div class="form-row">
+        <div class="col-sm-12">
+          
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+<div style="color: white;">
+      <br>
+      <hr style="border-color: #FF0000; width: 100%;">
+       <h1 class="text-center display-4">Casa de Carnes Império</h1>
+      <p class="lead text-center"><a class="nav-link" style="color: white;" href="https://www.instagram.com/oc.gui/" target="_blank">Chameleon Web Design 2022 ©</a></p>
+    </div>
+
+<!--JANELAS MODAIS-->
+<div class="modal fade" id="nobres" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Carnes Nobres</h5>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <img src="img/carn.jpg">
+      <div class="modal-body">
+        Entre os tipos de carnes nobres bovinas estão: Maminha, Picanha, Baby beef, Contrafilé, Lagarto, Filé mignon, Patinho, Coxão mole, Alcatra.
+        <p>Já entre as carnes suínas estão: Lombo, Costela, Picanha, Pernil, Paleta e a Barriga.</p>
+      </div>
+      <div class="modal-footer">
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+<div class="modal fade" id="exoticas" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Carnes Exóticas</h5>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <img src="img/carnee.jpg">
+      <div class="modal-body">
+       Entre os tipos de carne exóticas encontramos: Carne de Cordeiro, Javali, Coelho, Codorna, Capivara, Jacaré, Rã, Faisão, Escargots, Ouriço do Mar e Avestruz.
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+<div class="modal fade" id="saudavel" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Carnes saudáveis</h5>
+        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+      </div>
+      <img src="img/pexx.jpg">
+      <div class="modal-body">
+       <p>Peixe/Frutos do mar/ostras: o Salmão selvagem do Alasca, ostras e sardinhas são mais ricos em gordurassaudáveis; peixes brancos como bacalhau ou linguado tendem a ser mais magros.</p>
+       <p>Peru:  A carne branca tem um pouco menos de gordura saturada que o escuro. O peru é bastante comparável ao frango em nutrientes, mas tanto a sua carne escura como a branca são ligeiramente mais magras.</p>
+       <p>Galinha: A carne branca tem um pouco menos de gordura saturada que o escuro; O peito desossado e sem pele é o mais magro.</p>
+
+     </div>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+     </div>
+   </div>
+ </div>
+</div>
+
+
+
+
+</body>
+</html>
