@@ -58,4 +58,11 @@ html{
 
 /* Barra de Rolagem */
 
-
+.carousel-control-next{
+    width: 50px;
+   position: absolute;
+}
+.carousel-control-prev{
+    width: 50px;
+   position: absolute;
+}
